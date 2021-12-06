@@ -1,0 +1,43 @@
+$ git help                                      // Displays the git related commands and thair use
+$ clear                                         // To clear the window
+$ whoami                                        // To get the information about the user
+$ pwd                                           // To get the path of present Directory
+$ git config --global user.name "username"      // To set the global user name
+$ git config --global user.email "user_email"   // To set the global user email
+$ git config user.name "username"               // To set the user name for perticular project
+$ git config user.email "user_email"            // To set the user email for perticular project
+mkdir folder_name                               // To create a new empty directory
+cd folder_name                                  // To move into perticular directory
+$ cd ..                                         // To move one directory back
+$ ls                                            // To list all the files and directorys of present directrory
+$ ls -a                                         // To list all the files and directorys with hidden files of present directrory
+$ git init                                      // To initialise the empty git repository
+$ touch name.txt                                // To create a empty file
+$ vi demo.txt                                   // To edit the file
+$ gedit demo.txt                                // To edit the file
+$ git status                                    // To check the staged and unchanged files
+$ git add <file_name>                           // To stage the perticular file
+$ git add.                                      // To stage all the files
+$ git rm --cached <file_name>                   // To unstage the perticular file
+$ git rm --cached.                              // To unstage all the files
+$ git commit -m "message"                       // To commit the changes with message
+$ git remote -v                                 // To get the current remote repository
+$ git remote add origen <link>                  // To add the git-hub repository to local
+$ git push origen master                        // To push the source code into repository
+$ git clone <link>                              // To clone the remote repository into local
+$ git pull                                      // To pull the source code and merge into local from remote repository
+$ git branch                                    // To view the available branch's
+$ git branch branch_name                        // To create a new branch
+$ git checkout branch_name                      // To change the branch
+$ git featch                                    // To pull the source code into local from remote repository
+$ git branch sub_branch origen branch_name      // To create the sub-branch from the current branch
+$ git checkout -b sub_branch origen/master      // To create and move into the sub-branch from the main branch
+$ git merge branch_name                         // To mearge the branch with the current branch
+$ git stash                                     // To save the file temporarily
+$ git stash save "message"                      // To save the file temporarily with a message
+$ git stash list                                // To list the temporarily saved files
+$ git stash apply stash @{0}                    // To apply all the saved changes
+$ git stash pop stash @{0}                      // To apply the saved changes
+$ git stash drop                                // To drop all the temporarily saved files
+$ git commit --amend                            // To change the commit message
+$ git checkout -b name                          // To create and move into the sub-branch from the current branch
